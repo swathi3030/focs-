@@ -1,0 +1,78 @@
+body{
+    padding-top: 80px;
+}
+.section-heading{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+.section-subheading{
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.team-member{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.team-member img{
+    border: 2px solid rgb(101, 100, 100);
+}
+.team-member h4{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+/* contact */
+.contact-card{
+    height: 250px;
+}
+.contact-head{
+    font-size: 23px;
+}
+.contact-text{
+    font-weight: 500;
+    color: blue;
+}
+
+#about{
+    min-height: 20%;
+}
+
+#contact{
+    min-height: 15%;
+}
+
+/* login */
+.card::before,.card::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0,0,1);
+    transition:transform .3s ease-out 0s;
+    background: rgba(255,255,255,0.1);
+    content: '';
+    pointer-events: none;
+}
+.card::after{
+    transform-origin: right bottom;
+}
+.card::before{
+    transform-origin: left top;
+}
+.card:hover::before,.card:hover::after,.card:focus::after{
+    transform: scale3d(1,1,1);
+}
+.gradient-custom{
+    background: blue;
+    background: -webkit-linear-gradient(to right,rgba(106,17,103,1),rgba(37,117,252,1));
+    background: linear-gradient(to right,rgba(106,17,103,1),rgba(37,117,252,1));
+}
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
